@@ -83,3 +83,29 @@ __all__ = [
     rot_vorakd.__name__,
     rot_kdvora.__name__,
 ]
+
+
+def _main(argv=None):
+    import argparse
+    import sys
+
+    parser = argparse.ArgumentParser(
+        description=__doc__.strip().splitlines()[0],
+    )
+    parser.add_argument(
+        '--rotation', choices=__all__, default=__all__[0],
+        help='Rotation keyboard layout/direction (default: %(default)s)',
+    )
+    args = parser.parse_args(argv)
+
+    rotation_fn = globals()[args.rotation]
+
+    for line in sys.stdin:
+        sys.stdout.write(rotation_fn(line))
+        sys.stdout.flush()
+
+    return 0
+
+if __name__ == '__main__':
+    import sys
+    sys.exit(_main())
