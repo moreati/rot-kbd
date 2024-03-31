@@ -26,3 +26,10 @@ wertyu
 $ echo 'qwerty' | python -mrot_kbd | python -mrot_kbd --rotation rot_yqwert
 qwerty
 ```
+
+## Supposedly Asked Questions
+
+### Is this secure?
+
+Absolutely not, it's not even close. `rot_wertyq` and `rot_yqwert` are
+certified upto an adversary rated SA 8.75 (Sibling, Age 8¾).
