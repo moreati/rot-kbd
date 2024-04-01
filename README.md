@@ -33,3 +33,7 @@ qwerty
 
 Absolutely not, it's not even close. `rot_wertyq` and `rot_yqwert` are
 certified upto an adversary rated SA 8.75 (Sibling, Age 8¾).
+
+### Is this some kind-a joke?
+
+Yes. We prefer them to mean jokes.
